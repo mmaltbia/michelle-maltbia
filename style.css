@@ -1,6 +1,31 @@
 body {
 	background-color: #000;
 	color: #fff;
+	font-style: italic;
+}
+
+.css-typing
+{
+    width: 8.15em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 1s steps(12, end);
+    animation: type 1s steps(12, end);
+    font-family: Times New Roman, serif;
+    font-size: 80%;
+    color: #fff;
+    margin-left: 18%;
+    margin-right: 18%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
 }
 
 /*Display 3 per row for medium displays (like mobile phones in landscape or smaller tablets)*/
@@ -9,9 +34,74 @@ body {
     width: 33.3333333%;
   }
 }
+
 /*Display 6 to a row for large displays (like medium tablets and up) */
 @media screen and min-width: 40.5em) {
   #logo {
-    width: 16.6666667%;
+    width: 8.6666667%;
+  }
+}
+
+/*Center Container*/
+@media screen and (min-width: 28.75em) {
+  #container {
+  	margin-left: 18%;
+    margin-top: 20%;
+    width: 65%;  }
+}
+/*Center Container*/
+@media screen and min-width: 40.5em) {
+  #container {
+  	margin-left: 18%;
+    margin-top: 20%;
+    width: 65%;  }
+}
+
+/*Strength's Styling*/
+@media screen and (min-width: 28.75em) {
+  #container {
+  	margin-left: 10%;
+  	margin-right: 10%;
+  	text-align: center;
+  	font-size: 55px;
+  	margin-bottom: 1%;
+}
+/*Strength's Styling*/
+@media screen and min-width: 40.5em) {
+  #container {
+  	margin-left: 10%;
+  	margin-right: 10%;
+  	text-align: center;
+  	font-size: 55px;
+  	margin-bottom: 1%;
+}
+
+/*Horizontal Rule Centered on Small Displays*/
+@media screen and (min-width: 28.75em) {
+  #horizontal-rule {
+    top: 50%;
+    left: 50%;
+  }
+}
+/*Horizontal Rule Centered on Large Displays*/
+@media screen and min-width: 40.5em) {
+  #horizontal-rule {
+  	top: 50%;
+  	left: 50%;
+  }
+}
+
+/*Headshot*/
+@media screen and (min-width: 28.75em) {
+  img#headshot {
+  	margin-left: 40%;
+  	width: 20%;
+  }
+}
+/*Headshot*/
+@media screen and min-width: 40.5em) {
+  img#headshot {
+  	margin-left: 40%;
+  	width: 20%;
   }
 }
